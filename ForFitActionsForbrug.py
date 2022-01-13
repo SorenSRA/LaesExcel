@@ -5,8 +5,10 @@ from openpyxl import load_workbook
 
 
 
-output_wb_skab = 'C:\\SRA\\LIFE-ForFit Financial Reporting\\999. OkonomiOpfolgning\\5. Forbrug\\LifeForFitForbrugActionSkabelon.xlsx'
-output_wb = 'C:\\SRA\\LIFE-ForFit Financial Reporting\\999. OkonomiOpfolgning\\5. Forbrug\\LifeForFitForbrug2021Q4.xlsx'
+output_wb_skab = 'C:\\SRA\\LIFE-ForFit Financial Reporting\\' \
+                 '999. OkonomiOpfolgning\\5. Forbrug\\LifeForFitForbrugActionSkabelon.xlsx'
+output_wb = 'C:\\SRA\\LIFE-ForFit Financial Reporting\\' \
+            '999. OkonomiOpfolgning\\5. Forbrug\\LifeForFitForbrug2021Q4.xlsx'
 
 output_valuta = 'Dkr'  # Enten 'Euro' eller 'Dkr'
 euro_til_dkr = 7.45
