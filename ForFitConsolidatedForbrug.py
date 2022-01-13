@@ -14,6 +14,7 @@ partner_liste = {
     'SLS': '1. SaltenLangsø',
     'EPA': '2. Miljøstyrelsen',
     'SHL': '3. SHLF',
+
 }
 
 dir_base = 'C:\\SRA\\LIFE-ForFit Financial Reporting\\'
