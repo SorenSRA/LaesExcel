@@ -4,21 +4,13 @@ from openpyxl.utils.dataframe import dataframe_to_rows
 from openpyxl import load_workbook
 
 
-output_wb_skab = 'LifeForFitForbrugActionSkabelon.xlsx'
-output_wb = 'LifeForFitForbrug2021Q4.xlsx'
 
-output_valuta = 'Euro'  # Enten 'Euro' eller 'Dkr'
+output_wb_skab = 'C:\\SRA\\LIFE-ForFit Financial Reporting\\999. OkonomiOpfolgning\\5. Forbrug\\LifeForFitForbrugActionSkabelon.xlsx'
+output_wb = 'C:\\SRA\\LIFE-ForFit Financial Reporting\\999. OkonomiOpfolgning\\5. Forbrug\\LifeForFitForbrug2021Q4.xlsx'
+
+output_valuta = 'Dkr'  # Enten 'Euro' eller 'Dkr'
 euro_til_dkr = 7.45
 
-partner_liste = {
-    'SLS': '1. SaltenLangsø',
-    'EPA': '2. Miljøstyrelsen',
-    'SHL': '3. SHLF',
-
-}
-
-dir_base = 'C:\\SRA\\LIFE-ForFit Financial Reporting\\'
-dir_report = '\\1. Financial Report'
 dkr = 'Dkr'
 
 def get_input_df(wb):
