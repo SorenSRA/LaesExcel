@@ -13,7 +13,7 @@ partnerliste = {
     'SON': '3. HedeSelskabet\\7. SondrupPlantage',
     'CLA': '3. HedeSelskabet\\9. Clasonborg',
     'IGN': '4. Københavns Universitet',
-    'SLS': '5. SaltenLangsø',
+    'SLS': '5. Salten Langsø',
     'SHLF': '6. Landesforsten Schleswig-Holstein',
     'SKD': '7. Skovdyrkerne',
     'LOV': '8. Løvenholm - NST',
@@ -21,3 +21,9 @@ partnerliste = {
     'STI': '10. Stilde - NST',
     'NST': '20. Naturstyrelsen',
 }
+
+
+output_wb_skab = 'C:\\SRA\\LIFE-ForFit Financial Reporting\\' \
+                    '999. OkonomiOpfolgning\\5. Forbrug\\LifeForFitForbrugActionSkabelon.xlsx'
+output_wb = 'C:\\SRA\\LIFE-ForFit Financial Reporting\\' \
+                '999. OkonomiOpfolgning\\5. Forbrug\\LifeForFitForbrug2021Q3.xlsx'
