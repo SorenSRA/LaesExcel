@@ -1,4 +1,4 @@
-#"C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3\Python.exe" LIFEActionForbrug.py
+# "C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3\Python.exe" LIFEActionForbrug.py
 import os
 import pandas as pd
 from openpyxl.utils.dataframe import dataframe_to_rows
@@ -8,16 +8,16 @@ projekt = 'OpenWoods'
 
 if projekt == 'ForFit':
     from ForFitPartneroversigt import partnerliste, pathbase, pathspecff, output_wb, output_wb_skab
-elif projekt == 'OpenWoods':   
+elif projekt == 'OpenWoods':
     from OpenWoodsPartneroversigt import partnerliste, pathbase, pathspecff, output_wb, output_wb_skab
 else:
     print('Fejl')
-
 
 output_valuta = 'Dkr'  # Enten 'Euro' eller 'Dkr'
 euro_til_dkr = 7.4393
 
 dkr = 'Dkr'
+
 
 def get_input_df(wb):
     cols_laes = 'C:Z'
@@ -81,7 +81,7 @@ def get_valuta_kor(input_val):
             val_kor = euro_til_dkr
     else:  # output_valuta er EURO
         if input_val == dkr:
-            val_kor = 1.0/euro_til_dkr
+            val_kor = 1.0 / euro_til_dkr
         else:
             val_kor = 1.0
     return val_kor
@@ -107,7 +107,6 @@ for key, partner in partnerliste.items():
 
     # løbende summering af input_dataframes for hver enkelt partner
     ialt_df = ialt_df.add(input_df, fill_value=0)
-
 
 sh_outputfane = get_output_fane(wb_output, 'I alt')
 kopier_df_excel(sh_outputfane, ialt_df)
